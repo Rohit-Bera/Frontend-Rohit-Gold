@@ -1,0 +1,254 @@
+.market {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.market .heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: crimson;
+
+  font-family: "Exo", sans-serif;
+  /* background-color: teal; */
+  width: 40rem;
+}
+
+.market .heading span {
+  width: 150px;
+  background-color: crimson;
+  text-decoration: line-through;
+  height: 2px;
+  margin: 1rem 1rem;
+}
+
+.market .heading .ship1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.market .newsection1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.market .newsection1 button {
+  height: 5rem;
+  width: 15rem;
+  background-color: crimson;
+  color: whitesmoke;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  font-family: "Shadows Into Light", cursive;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.market .newsection2 {
+  display: flex;
+  margin: 5px;
+}
+
+.market .newsection1 img,
+.market .newsection2 img {
+  margin: 5px;
+}
+
+/* market -> collection section */
+.market .img-slider {
+  /* background-color: aqua; */
+  width: 165vh;
+}
+
+.market .img-slider .colpic {
+  height: 12rem;
+}
+
+/* market -> gifts section */
+.market .gifts-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  /* background-color: tomato; */
+  width: 65vw;
+  height: 85vh;
+}
+.market .gifts-section img {
+  height: 18rem;
+  width: 25rem;
+
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px crimson; */
+}
+
+/* market products */
+.market-product-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.market-product-container label {
+  background-color: crimson;
+  width: auto;
+  padding: 5px;
+  min-height: 2.5rem;
+  height: auto;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+
+.market-product-container .market-product-body {
+  width: 190vh;
+  min-height: 30vh;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.market-product-container .market-product-body .product-card {
+  width: 29vw;
+  min-width: 27vw;
+  height: 53vh;
+  min-height: 49vh;
+  margin: 10px;
+  /* background-color: crimson; */
+  border: 2px solid crimson;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: crimson;
+}
+
+.market-product-container .market-product-body .product-card img {
+  height: 16rem;
+  width: 17rem;
+  margin: 5px 5px;
+}
+
+.market-product-container .market-product-body .product-card .headers {
+  /* text-align: left; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* background-color: red; */
+  height: auto;
+  width: 23rem;
+}
+
+.market-product-container .market-product-body .product-card .headers .view {
+  background-color: crimson;
+  color: whitesmoke;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+}
+
+.market-product-container .market-product-body .product-card p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.market-product-container .market-product-body .product-card span {
+  font-weight: bold;
+}
+
+.market-product-body .product-card i {
+  font-size: 25px;
+  cursor: pointer;
+  color: crimson;
+}
+
+.market-product-body .product-card .fa-heart:active {
+  transform: scale(0.9);
+}
+
+.market-product-body .product-card .fa-heart:focus {
+  outline: 0;
+}
+
+/* view product */
+
+.view-product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+}
+
+.view-product .view {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: crimson;
+  width: 90rem;
+  height: 33rem;
+}
+
+.view-product .view .img {
+  /* background-color: aqua; */
+  /* background-color: crimson; */
+  width: 37rem;
+  height: 28em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.view-product img {
+  height: 27rem;
+  width: 29rem;
+}
+
+.view-product .details h3 {
+  font-size: 22px;
+  color: aliceblue;
+}
+
+.view-product .details span {
+  font-size: 23px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.view-product .details label {
+  margin-top: 2rem;
+}
+
+.view-product .details button {
+  height: 2rem;
+  /* width: ; */
+  font-size: 17px;
+  font-weight: bold;
+  color: crimson;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  font-family: "Exo", sans-serif;
+}

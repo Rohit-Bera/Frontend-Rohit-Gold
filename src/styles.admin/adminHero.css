@@ -1,0 +1,101 @@
+.herocontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  /* margin: 1rem auto; */
+}
+
+.herocontainer h2 {
+  color: crimson;
+}
+
+.herocontainer .herocontent h3 {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.herocontainer .herocontent {
+  background: linear-gradient(
+    to right bottom,
+    rgba(220, 20, 60, 0.7),
+    rgba(220, 20, 60, 0.3)
+  );
+
+  width: 90rem;
+  height: auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem auto;
+
+  flex-wrap: wrap;
+}
+
+.herocontainer .second {
+  margin-top: 1rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(220, 20, 60, 0.7),
+    rgba(220, 20, 60, 0.3)
+  );
+
+  width: 90rem;
+  height: auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.herocontainer .herocontent .user-card,
+.herocontainer .herocontent .product-card,
+.herocontainer .herocontent .order-card,
+.herocontainer .herocontent .feedback-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 1rem;
+  background-color: crimson;
+  color: white;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 5px whitesmoke;
+}
+
+.herocontainer .herocontent .user-card p,
+.herocontainer .herocontent .product-card p,
+.herocontainer .herocontent .order-card p,
+.herocontainer .herocontent .feedback-card p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*  */
+
+/* .herocontainer .second .user {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+} */
+
+.herocontainer .second .user .user-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 1rem;
+  background-color: crimson;
+  color: white;
+  width: 12rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 5px whitesmoke;
+}

@@ -1,0 +1,166 @@
+.all-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-container .notes {
+  color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -3;
+}
+
+.all-container .all-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  z-index: 5;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.all-container .all-body .all-card {
+  margin-top: 15px;
+}
+
+.all-container .all-body .all-card table {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  width: 95vw;
+}
+
+.all-container .all-body .all-card table tr {
+  box-shadow: 0 0 15px grey;
+}
+
+.all-container .all-body .all-card table tr td {
+  /* background-color: darkred; */
+  height: auto;
+  font-size: 20px;
+}
+
+.all-container .all-body .all-card table tr td img {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-container .all-body .all-card table tr .img {
+  width: 10rem;
+}
+
+.all-container .all-body .all-card table tr .pname {
+  width: 13rem;
+}
+
+.all-container .all-body .all-card table tr .cname {
+  width: 16rem;
+}
+
+.all-container .all-body .all-card table tr .price {
+  width: 7rem;
+}
+
+.all-container .all-body .all-card table tr .weight {
+  width: 7rem;
+}
+
+.all-container .all-body .all-card table tr .purity {
+  width: 5.5rem;
+}
+
+.all-container .all-body .all-card table tr .category {
+  width: 10rem;
+  /* background-color: aqua; */
+}
+
+.all-container .all-body .all-card table tr .status {
+  width: 9rem;
+  /* background-color: aqua; */
+}
+.all-container .all-body .all-card table tr .add {
+  width: 3.5rem;
+}
+
+.all-container .all-body .all-card table tr .add button {
+  outline: none;
+  border: none;
+  font-size: 25px;
+  background-color: crimson;
+  color: white;
+}
+
+.all-container .all-body .all-card table tr .edit {
+  width: 6rem;
+  /* background-color: aqua; */
+}
+.all-container .all-body .all-card table tr .edit button {
+  outline: none;
+  border: none;
+  font-size: 25px;
+  background-color: crimson;
+  color: white;
+}
+
+.all-container .all-body .all-card table tr .cross {
+  width: 5rem;
+}
+
+.all-container .all-body .all-card table tr .cross button {
+  outline: none;
+  border: none;
+  background-color: crimson;
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+button:focus {
+  outline: 0;
+}
+
+button {
+  cursor: pointer;
+}
+.all-container .all-body .all-card table tr .status .available {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.all-container .all-body .all-card table tr .status p .open {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border: 1px solid green;
+  box-shadow: 0 0 15px whitesmoke;
+  border-radius: 100%;
+}
+
+.all-container .all-body .all-card table tr .status .unavailable {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.all-container .all-body .all-card table tr .status p .close {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border: 1px solid red;
+  box-shadow: 0 0 15px whitesmoke;
+  border-radius: 100%;
+}

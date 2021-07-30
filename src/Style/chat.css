@@ -1,0 +1,85 @@
+/* chat css */
+.chat-body {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5rem;
+}
+.chat-body .chat-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.chat-body .chat-container .chat {
+  /* margin-top: 20px; */
+  border: 3px solid crimson;
+  border-radius: 10px;
+  width: 64vw;
+  height: 76vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chat-body .chat-container .chat .allchats {
+  display: flex;
+  flex-direction: column;
+  width: 63vw;
+  height: 75vh;
+  /* background-color: aqua; */
+  /* margin: 0px 10px; */
+  overflow: auto;
+}
+
+.chat-body .chat-container .chat .chat-submit {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.chat-body .chat-container .chat .chat-submit input {
+  height: 3rem;
+  width: 48rem;
+  font-size: 20px;
+  outline: none;
+  color: crimson;
+  font-weight: bold;
+  font-family: cursive;
+  border: 2px solid crimson;
+  margin-right: 10px;
+}
+
+.chat-body .chat-container .chat .chat-submit button {
+  height: 3rem;
+  width: 11rem;
+  background-color: crimson;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* noconversation */
+.noconversation {
+  margin-left: 10rem;
+}
+.noconversation p {
+  font-size: 35px;
+  color: gray;
+}
+
+.noconversation button {
+  height: 3rem;
+  width: 11rem;
+  background-color: crimson;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}

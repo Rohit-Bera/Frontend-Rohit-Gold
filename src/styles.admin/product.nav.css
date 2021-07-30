@@ -1,0 +1,31 @@
+.product-nav {
+  /* background-color: aqua; */
+  width: auto;
+}
+
+.product-nav nav {
+  display: flex;
+  background-color: whitesmoke;
+}
+
+.product-nav nav div {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: chocolate; */
+  width: 35vw;
+}
+
+.product-nav nav div a {
+  /* color: crimson; */
+  color: crimson;
+  /* width: 4rem; */
+}
+
+.product-nav nav div .active {
+  background-color: crimson;
+  color: white;
+  width: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

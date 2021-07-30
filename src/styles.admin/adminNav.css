@@ -1,0 +1,111 @@
+.adminnav .dologo {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.adminnav .dologo img {
+  height: 85px;
+  width: 85px;
+  border-radius: 100%;
+  border: 2px solid black;
+}
+.adminnav {
+  display: flex;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(253, 101, 133, 1) 0%,
+    rgba(255, 211, 165, 1) 90%
+  );
+  width: auto;
+  height: 8rem;
+}
+.adminnav .logotitle {
+  display: flex;
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+  top: 18px;
+  right: 98px;
+  font-family: "Dancing Script", cursive;
+  color: crimson;
+}
+
+/* logoname */
+.adminnav .logoname {
+  display: flex;
+  position: relative;
+  right: 68px;
+  color: white;
+  font-family: "Berkshire Swash", cursive;
+  text-transform: uppercase;
+}
+.adminnav .logoname span {
+  font-size: 25px;
+  font-family: "Exo", sans-serif;
+  letter-spacing: 5px;
+}
+.adminnav .logoname .first {
+  font-size: 25px;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+  color: crimson;
+}
+
+.adminnav .navpart {
+  display: flex;
+  align-items: center;
+}
+
+.adminnav .navpart nav {
+  display: flex;
+  width: 93vh;
+  /* background-color: aqua; */
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 20rem;
+}
+
+.adminnav .navpart nav h3 {
+  text-transform: capitalize;
+  color: crimson;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.adminnav .navpart nav button {
+  width: 15vh;
+  height: 5vh;
+  background-color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.adminnav .navpart nav .btn:active {
+  transform: scale(0.9);
+}
+
+.adminnav .navpart nav .btn:focus {
+  outline: 0;
+}
+
+.navpart nav .active-link h3 {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  width: 6rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

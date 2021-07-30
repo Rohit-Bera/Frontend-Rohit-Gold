@@ -1,0 +1,63 @@
+.signup-box{
+    height: 65vh;
+    width: 60%;
+    margin: auto;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,101,133,1) 0%, rgba(255,211,165,1) 90% );
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 5px solid crimson;
+    border-top: none;
+    box-shadow: 5px 5px 10px 7px grey;
+}
+.signup-box form .flexi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+.signup-box h3{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 3px 1px crimson;
+}
+.signup-box input{
+    height: 30px;
+    width: 180px;
+    outline: none;
+    margin-left: 10px;
+    font-size: 18px;
+    color: crimson;
+    border: 1px solid black;
+}
+.signup-box input:focus{
+    border: 2.5px solid crimson;
+}
+.signup-box .add{
+    height: 60px;
+    width: 190px;
+    outline: none;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+.signup-box .add:focus{
+    border: 2.5px solid crimson;
+    
+}
+.signup-box button{
+    height: 40px;
+    width: auto;
+    outline: none;
+    background-color: white;
+    border: 2px solid crimson;
+    margin-top: 10px;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+}
+.signup-box .btn:active {
+    transform: scale(0.9);
+}
+.signup-box.btn:focus {
+    outline: 0;
+  }

@@ -1,0 +1,72 @@
+.profile {
+  height: 12vh;
+  background-color: white;
+  border: 5px solid crimson;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.profile .login,
+.profile .signup {
+  width: 40%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+  color: crimson;
+}
+
+.profile .login .line,
+.signup .line {
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.profile .login button {
+  width: 55vh;
+  height: 8vh;
+  background-color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.profile .signup button {
+  width: 55vh;
+  height: 8vh;
+  background-color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+.profile .login .btn:active {
+  transform: scale(0.9);
+}
+.profile .login .btn:focus {
+  outline: 0;
+}
+
+.profile .signup .btn:active {
+  transform: scale(0.9);
+}
+.profile .signup .btn:focus {
+  outline: 0;
+}

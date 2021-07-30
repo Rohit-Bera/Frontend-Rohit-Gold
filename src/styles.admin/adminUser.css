@@ -1,0 +1,29 @@
+.adminuser {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.adminuser .users-container {
+  width: 190vh;
+  min-height: 30vh;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.adminuser .users-container .user-card {
+  width: 21vw;
+  height: 29vh;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 1rem;
+  background-color: crimson;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

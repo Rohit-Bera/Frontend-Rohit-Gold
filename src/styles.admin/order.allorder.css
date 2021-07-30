@@ -1,0 +1,126 @@
+.order-body {
+  /* background-color: crimson; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: -170px; */
+}
+.order-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.order-header {
+  width: 97vw;
+}
+.order-header .nav {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: crimson;
+  color: white;
+  height: 2rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.order-body .order-card {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 97vw;
+  min-height: 10rem;
+  height: auto;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: 2px solid crimson;
+  box-shadow: 0 0 15px grey;
+}
+
+.order-body .order-card .order {
+  /* background-color: aqua; */
+}
+
+.order-body .order-card .order .available {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: aqua; */
+  width: 10rem;
+}
+
+.order-body .order-card .order .available .false {
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  box-shadow: 0 0 15px crimson;
+  border: 1px solid black;
+}
+
+.order-body .order-card .order .available .true {
+  background-color: green;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  box-shadow: 0 0 15px darkgreen;
+  border: 1px solid black;
+}
+
+.order-body .order-card .owner {
+  /* background-color: aqua; */
+  /* width: 15rem; */
+}
+
+.order-body .order-card .product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: aqua; */
+  width: 20rem;
+}
+
+.order-body .order-card .product img {
+  height: 160px;
+  width: 160px;
+}
+
+.order-body .order-card .product .available {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: white; */
+  width: 7rem;
+}
+
+.order-body .order-card .product .available .false {
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  box-shadow: 0 0 15px darkred;
+  border: 1px solid black;
+}
+.order-body .order-card .product .available .true {
+  background-color: green;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  box-shadow: 0 0 15px darkgreen;
+  border: 1px solid black;
+}
+
+.order-body .order-card p,
+.order-body .order-card h3,
+.order-body .order-card h4 {
+  color: crimson;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.null {
+  color: crimson;
+}

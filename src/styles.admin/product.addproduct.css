@@ -1,0 +1,146 @@
+.addproduct-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.addproduct-content .addproduct-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 70vw;
+  height: 60vh;
+  color: crimson;
+}
+
+.addproduct-content form .flex1 {
+  font-size: 20px;
+}
+.addproduct-content form .flex2 {
+  font-size: 20px;
+}
+
+.addproduct-content form .flex1 input {
+  height: 30px;
+  width: 11rem;
+  margin-left: 10px;
+  /* border: 1px solid crimson; */
+  /* outline: none; */
+  border-color: crimson;
+  outline: none;
+  font-size: 20px;
+  color: crimson;
+}
+.addproduct-content form .flex1 h4 {
+  display: flex;
+  align-items: center;
+}
+
+.addproduct-content form .flex2 input {
+  height: 30px;
+  width: 11rem;
+  margin-left: 10px;
+  /* border: 1px solid crimson; */
+  /* outline: none; */
+  border-color: crimson;
+  outline: none;
+  font-size: 20px;
+  color: crimson;
+}
+.addproduct-content form .flex2 h4 {
+  display: flex;
+  align-items: center;
+}
+
+/* .addproduct-content form span {
+  width: 2px;
+  background-color: crimson;
+  /* text-decoration: line-through; */
+/* height: 18rem;
+  margin-left: 15px;
+  margin-right: 15px;
+} */
+form section {
+  display: flex;
+  align-items: center;
+}
+
+.addproduct-content form .flex3 {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+}
+
+/*  toggle button  */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 12rem;
+  /* margin is optional */
+  /* background-color: aqua; */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: grey;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: aliceblue;
+  transition: 0.4s;
+  border-radius: 100%;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+input:checked + .slider {
+  background-color: crimson;
+}
+
+/* button */
+
+.addproduct-content form .flex3 button {
+  /* outline: none; */
+  border: none;
+  background-color: crimson;
+  cursor: pointer;
+  color: white;
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.9);
+}

@@ -1,0 +1,129 @@
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  /* margin-top: 2rem; */
+}
+
+.product-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-category h2 {
+  color: crimson;
+}
+.product-category span {
+  width: 150px;
+  background-color: crimson;
+  text-decoration: line-through;
+  height: 2px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.product-container .product-store {
+  width: 190vh;
+  min-height: 30vh;
+  /* background-color: aqua; */
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.product-container .product-store .product-card {
+  width: 30vw;
+  height: 25vh;
+  margin: 1rem;
+  background-color: crimson;
+  border-radius: 10px;
+  display: flex;
+}
+
+.product-container .product-store .product-card img {
+  background-color: aqua;
+  width: 25vh;
+  height: 25vh;
+}
+
+.product-container .product-store .product-card .productdesc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: aliceblue;
+}
+
+/* add collection */
+
+.product-container .addcollection-section {
+  background-color: crimson;
+  height: 40vh;
+  margin-left: 30px;
+  width: 35vw;
+  box-shadow: 0 0 30px whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-container .addcollection-section input {
+  height: 1.5rem;
+  width: 12rem;
+  outline: none;
+}
+
+.product-container .addcollection-section button {
+  width: 15vh;
+  height: 5vh;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 20px;
+  color: crimson;
+  cursor: pointer;
+}
+.product-container .addcollection-section h3 {
+  color: white;
+}
+
+.product-container .addcollection-section button:active {
+  transform: scale(0.9);
+}
+
+.product-container .addcollection-section button:focus {
+  outline: 0;
+}
+
+.product-card .product-times {
+  /* background-color: aqua; */
+  margin-left: 50px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+}
+
+.product-card .product-times button {
+  /* outline: none; */
+  border: none;
+  background-color: crimson;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+.product-card .product-times button:focus {
+  outline: none;
+}
+
+.product-card .product-times button:active {
+  transform: scale(0.9);
+}

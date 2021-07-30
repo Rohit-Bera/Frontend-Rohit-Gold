@@ -1,0 +1,186 @@
+.myprofile {
+  display: flex;
+}
+.myprofile .myprofile-box {
+  width: 50vh;
+  height: 72vh;
+  padding-bottom: 60px;
+  font-weight: bold;
+  background-color: whitesmoke;
+}
+
+.myprofile-box .myaccount .flexi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25vh;
+}
+.myprofile-box .myaccount .flexi .btn {
+  cursor: pointer;
+}
+.myprofile-box .myaccount .flexi .btn:active {
+  transform: scale(0.9);
+}
+
+.myprofile-box .myaccount .flexi .btn:focus {
+  outline: 0;
+}
+
+.myprofile-box .myaccount .left {
+  width: auto;
+  height: auto;
+  padding: 5px;
+  background-color: white;
+  color: crimson;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 1px solid crimson;
+}
+
+.myprofile-box .myaccount {
+  color: crimson;
+  height: 95px;
+  width: 30vh;
+  margin-left: 70px;
+  margin-top: 90px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+/* overview styling*/
+.myprofile-box .overview {
+  margin-left: 70px;
+  margin-top: 30px;
+  /* margin-bottom: 20px; */
+  height: 30px;
+  width: 30vh;
+}
+/* this one is fro NavLink*/
+.myprofile-box .overview .selected span {
+  padding: 10px 130px 10px 5px;
+}
+
+.myprofile-box .overview .line {
+  text-decoration: none;
+  color: black;
+}
+.myprofile-box .overview .btn {
+  outline: none;
+  width: 30vh;
+  display: flex;
+  color: crimson;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  font-family: "Exo", sans-serif;
+  cursor: pointer;
+}
+.myprofile-box .overview .active button {
+  background-color: crimson;
+  color: white;
+}
+
+.myprofile-box .account {
+  margin-left: 70px;
+  margin-top: 20px;
+  height: 120px;
+  width: 30vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* padding-bottom: 50px; */
+  border-bottom: 1px solid black;
+}
+.myprofile-box .account ul {
+  list-style: none;
+  color: crimson;
+  margin-left: -20px;
+}
+.myprofile-box .account ul li {
+  margin: 5px;
+}
+.myprofile-box .account ul li span {
+  color: grey;
+}
+.myprofile-box .account .line {
+  text-decoration: none;
+}
+.myprofile-box .account .btn {
+  outline: none;
+  width: 24vh;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: crimson;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  font-family: "Exo", sans-serif;
+  cursor: pointer;
+}
+.myprofile-box .account .active button {
+  background-color: crimson;
+  color: white;
+}
+
+.myprofile-box .allorders ul li span {
+  color: grey;
+}
+.myprofile-box .allorders {
+  margin-left: 70px;
+  /* margin-top: 30px; */
+  height: 140px;
+  width: 30vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.myprofile-box .allorders ul {
+  list-style: none;
+  color: crimson;
+  margin-left: -25px;
+}
+.myprofile-box .allorders ul li {
+  margin: 10px;
+}
+.myprofile-box .allorders .line {
+  text-decoration: none;
+}
+.myprofile-box .allorders .btn {
+  outline: none;
+  width: 24vh;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: crimson;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  font-family: "Exo", sans-serif;
+  cursor: pointer;
+}
+/* this one */
+.myprofile-box .allorders .active button {
+  background-color: crimson;
+  color: white;
+}
+
+.myprofile-box .overview button {
+  height: auto;
+  width: auto;
+  padding: 10px;
+}
+
+.myprofile-box .chatprofile {
+  height: 50px;
+  width: 30vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* border-bottom: 1px solid black; */
+  /* background-color: aqua; */
+}

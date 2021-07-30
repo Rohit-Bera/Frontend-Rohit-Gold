@@ -1,0 +1,66 @@
+.login-box{
+    height: 50vh;
+    width: 60%;
+    margin: auto;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,101,133,1) 0%, rgba(255,211,165,1) 90% );
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 5px solid crimson;
+    border-top: none;
+    box-shadow: 5px 5px 10px 7px grey;
+}
+.login-box form .flexi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box h3{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 3px 1px crimson;
+}
+.login-box input{
+    height: 30px;
+    width: 180px;
+    outline: none;
+    margin-left: 10px;
+    font-size: 18px;
+    color: crimson;
+    border: 1px solid black;
+}
+.login-box input:focus{
+    border: 2.5px solid crimson;
+}
+.login-box button{
+    height: 40px;
+    width: 70px;
+    outline: none;
+    background-color: white;
+    border: 2px solid crimson;
+    margin-top: 10px;
+}
+.login-box .two{
+    margin-left: 10px;
+    height: 40px;
+    width: 90px;
+    outline: none;
+    background-color: white;
+    border: 2px solid crimson;
+    margin-top: 10px;
+    width: auto;
+}
+
+.one , .two {
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+}
+
+.login-box .btn:active {
+    transform: scale(0.9);
+    border-radius: 5px;
+}
+.login-box .btn:focus {
+    outline: 0;
+  }

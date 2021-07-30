@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo", sans-serif;
+  box-sizing: border-box;
+}
+.dologo {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.dologo img {
+  height: 85px;
+  width: 85px;
+  border-radius: 100%;
+  border: 2px solid black;
+}
+.appfile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(253, 101, 133, 1) 0%,
+    rgba(255, 211, 165, 1) 90%
+  );
+}
+.appfile .logotitle {
+  font-family: "Dancing Script", cursive;
+  color: crimson;
+  margin-top: -4rem;
+  font-size: 23px;
+}
+
+/* logoname */
+.appfile .logoname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Berkshire Swash", cursive;
+  text-transform: uppercase;
+}
+.appfile .logoname span {
+  font-size: 25px;
+  font-family: "Exo", sans-serif;
+  letter-spacing: 5px;
+}
+.appfile .logoname .first {
+  font-size: 25px;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+  color: crimson;
+}
+/* navbar */
+.appfile .navbar {
+  font-family: "Exo", sans-serif;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* background-color: aqua; */
+}
+
+.appfile .navbar .nav-in {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: aqua; */
+  width: 5rem;
+  height: 5rem;
+}
+.appfile .navbar .nav-in i {
+  font-size: 25px;
+  color: crimson;
+  /* background-color: aqua; */
+}
+.appfile .navbar .line {
+  text-decoration: none;
+  color: crimson;
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.appfile .navbar p {
+  cursor: pointer;
+  /* background-color: aqua; */
+}
+/* pattern */
+.appfile .navbar p:hover {
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+/* search bar */
+.appfile .search {
+  /* background-color: aqua; */
+  width: 35rem;
+  height: 4rem;
+}
+
+.appfile .search form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.appfile input {
+  width: 30rem;
+  height: 3.5rem;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 5px solid crimson;
+}
+
+.appfile .search button {
+  background-color: crimson;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 3rem;
+  width: 3rem;
+}
+
+.appfile .search i {
+  font-size: 34px;
+  color: white;
+}

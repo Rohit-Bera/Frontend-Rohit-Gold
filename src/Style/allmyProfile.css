@@ -1,0 +1,378 @@
+/*
+
+Overview component style
+
+*/
+.overview-box {
+  /* background-color: blanchedalmond; */
+  /* height: 100vh; */
+  width: 140vh;
+  margin: 40px;
+}
+
+.overview-box .first {
+  display: flex;
+  justify-content: space-between;
+}
+.overview-box .first button {
+  font-family: "Exo", sans-serif;
+  cursor: pointer;
+  width: 68vh;
+  height: 25vh;
+  font-size: 0.9rem;
+  background-color: whitesmoke;
+  border: 2px solid crimson;
+  color: crimson;
+  border-radius: 10px;
+  outline: none;
+}
+.overview-box .first i {
+  font-size: 3rem;
+  color: crimson;
+}
+.overview-box .second {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.overview-box .second button {
+  font-family: "Exo", sans-serif;
+  cursor: pointer;
+  width: 68vh;
+  height: 25vh;
+  font-size: 0.9rem;
+  background-color: whitesmoke;
+  border: 2px solid crimson;
+  color: crimson;
+  border-radius: 10px;
+  outline: none;
+}
+.overview-box .second i {
+  font-size: 3rem;
+  color: crimson;
+}
+
+/*
+
+MyProfile component style
+
+*/
+.mypofile-box {
+  /* background-color: blanchedalmond; */
+  height: 70vh;
+  width: 140vh;
+  margin: 40px;
+}
+.mypofile-box h2 {
+  border-bottom: 2px solid crimson;
+  color: crimson;
+}
+
+.mypofile-box .flexi {
+  display: flex;
+}
+.mypofile-box .flexi h3 {
+  color: crimson;
+}
+.mypofile-box .flexi h4 {
+  margin-left: 10px;
+}
+.mypofile-box .flexi button {
+  outline: none;
+  border: none;
+  width: 100px;
+  height: 40px;
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  background-color: crimson;
+  cursor: pointer;
+}
+.mypofile-box .btn:active {
+  transform: scale(0.9);
+}
+.mypofile-box .btn:focus {
+  outline: 0;
+}
+/* 
+
+Myprofile -> edit 
+
+*/
+.mypofile-box .flexi .update {
+  outline: none;
+  border: none;
+  width: 140px;
+  height: 40px;
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  background-color: crimson;
+  cursor: pointer;
+}
+.mypofile-box .stretch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mypofile-box .flexi input {
+  height: 25px;
+  outline: none;
+  border: 1px solid crimson;
+  color: crimson;
+  background-color: white;
+}
+.mypofile-box .flexi input:focus {
+  background-color: crimson;
+  color: white;
+  border: 2px solid black;
+}
+.mypofile-box .flexi textarea {
+  height: 45px;
+  width: 160px;
+  outline: none;
+  border: 1px solid crimson;
+  color: crimson;
+  background-color: white;
+}
+.mypofile-box .flexi textarea:focus {
+  background-color: crimson;
+  color: white;
+  border: 2px solid black;
+}
+
+.mypofile-box .flexi .btn:active {
+  transform: scale(0.9);
+}
+.mypofile-box .flexi .btn:focus {
+  outline: 0;
+}
+
+/* 
+
+MyOrders component style
+
+*/
+.myorder-box {
+  background-color: blanchedalmond;
+  height: 120vh;
+  width: 140vh;
+  margin: 40px;
+  height: auto;
+  border-radius: 20px;
+  color: crimson;
+}
+.myorder-box .heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: crimson;
+}
+.myorder-box .heading h2 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.myorder-box .heading span {
+  width: 150px;
+  background-color: crimson;
+  text-decoration: line-through;
+  height: 2px;
+}
+.myorder-box .product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.myorder-box .product h3 {
+  font-size: 20px;
+}
+
+.myorder-box .product .product-img img {
+  height: 200px;
+  width: 200px;
+}
+.myorder-box .product .product-desc {
+  width: 400px;
+}
+
+.myorder-box .product .product-status {
+  /* background-color: aqua; */
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+
+MyWishlist component style
+
+*/
+.wishlist-box {
+  background-color: blanchedalmond;
+  height: 120vh;
+  width: 140vh;
+  margin: 40px;
+  height: auto;
+  border-radius: 20px;
+}
+.wishlist-box .heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: crimson;
+}
+.wishlist-box .heading h2 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.wishlist-box .heading span {
+  width: 150px;
+  background-color: crimson;
+  text-decoration: line-through;
+  height: 2px;
+}
+.wishlist-box .product {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.wishlist-box .product .product-img img {
+  height: 200px;
+  width: 200px;
+  margin-left: 20px;
+}
+.wishlist-box .product .product-desc {
+  /* background-color: aqua; */
+  vertical-align: middle;
+  width: 60vh;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: crimson;
+}
+.wishlist-box .product .product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  color: crimson;
+  /* background-color: aqua; */
+}
+.wishlist-box .product .product-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.wishlist-box .product .product-button button {
+  margin-right: 20px;
+  width: auto;
+
+  /* width: 8rem; */
+  height: auto;
+  font-size: 20px;
+  background-color: crimson;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+
+  font-family: "Shadows Into Light", cursive;
+}
+
+/* 
+
+MyCart component style
+
+*/
+.cart-box {
+  background-color: blanchedalmond;
+  height: 120vh;
+  width: 140vh;
+  margin: 40px;
+  height: auto;
+  border-radius: 20px;
+}
+.cart-box h3 {
+  font-size: 20px;
+}
+.cart-box h2 {
+  font-size: 28px;
+}
+.cart-box .heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: crimson;
+}
+.cart-box .heading h2 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.cart-box .heading span {
+  width: 150px;
+  background-color: crimson;
+  text-decoration: line-through;
+  height: 2px;
+}
+.cart-box .product {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: crimson;
+}
+.cart-box .product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cart-box .product .product-img img {
+  height: 200px;
+  width: 200px;
+}
+.cart-box .product .product-desc {
+  /* background-color: aqua; */
+  vertical-align: middle;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cart-box .product .product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: crimson;
+  /* background-color: aqua; */
+}
+.cart-box .product .product-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.cart-box .product .product-button button {
+  width: auto;
+
+  height: auto;
+  font-size: 20px;
+  background-color: crimson;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+
+  font-family: "Shadows Into Light", cursive;
+}

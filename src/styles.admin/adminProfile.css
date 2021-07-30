@@ -1,0 +1,49 @@
+.adminprofile-box {
+  background: linear-gradient(
+    to right bottom,
+    rgba(220, 20, 60, 0.7),
+    rgba(220, 20, 60, 0.3)
+  );
+  height: 55vh;
+  width: 140vh;
+  /* margin: 40px; */
+  border-radius: 10px;
+  padding-left: 3rem;
+}
+.adminprofile-box h2 {
+  border-bottom: 2px solid crimson;
+  color: crimson;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.adminprofile-box .flexi {
+  display: flex;
+}
+.adminprofile-box .flexi h3 {
+  color: crimson;
+  font-size: 20px;
+  font-weight: bold;
+}
+.adminprofile-box .flexi h4 {
+  margin-left: 10px;
+  color: white;
+  font-size: 20px;
+}
+.adminprofile-box .flexi button {
+  outline: none;
+  border: none;
+  width: 100px;
+  height: 40px;
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  background-color: crimson;
+  cursor: pointer;
+}
+.adminprofile-box .btn:active {
+  transform: scale(0.9);
+}
+.adminprofile-box .btn:focus {
+  outline: 0;
+}

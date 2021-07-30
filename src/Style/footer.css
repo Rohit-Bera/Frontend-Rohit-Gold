@@ -1,0 +1,84 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 33vh;
+  width: 100%;
+  background-color: crimson;
+  margin-top: 15px;
+}
+.foot-link {
+  /* background-color: aliceblue; */
+  width: 20vw;
+}
+.foot-form {
+  /* background-color: aliceblue; */
+  width: 25vw;
+  height: auto;
+  color: white;
+}
+.foot-form i {
+  font-size: 30px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.foot-form i:hover {
+  cursor: pointer;
+  color: crimson;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.foot-form button {
+  height: 2rem;
+  width: 5rem;
+  font-size: 15px;
+  color: crimson;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.foot-form button:focus {
+  transform: scale(0.9);
+}
+.foot-form button:active {
+  outline: 0;
+}
+
+.foot-form textarea {
+  height: 5rem;
+  width: 17rem;
+  font-size: 20px;
+  outline: none;
+  border: 2px solid black;
+}
+
+.foot-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foot-link a {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+}
+.foot-link a:hover {
+  color: crimson;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.rb {
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,50 @@
+/* message css */
+
+.msgbody {
+  margin: 0px 15px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+.msgtop {
+  width: auto;
+
+  max-width: 25vw;
+
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: crimson;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.message .msgbottom {
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.own {
+  display: flex;
+  align-items: flex-end;
+}
+
+.own .msgtop {
+  max-width: 28vw;
+
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  color: crimson;
+  font-size: 18px;
+  font-weight: bold;
+}
+.own .msgbottom {
+  text-align: right;
+}

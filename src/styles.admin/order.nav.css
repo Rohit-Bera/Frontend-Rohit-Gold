@@ -1,0 +1,71 @@
+.order-nav {
+  /* background-color: aqua; */
+  width: auto;
+}
+
+.order-nav nav {
+  display: flex;
+  background-color: whitesmoke;
+  height: 4rem;
+}
+
+.order-nav nav div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: chocolate; */
+  width: 45vw;
+}
+
+.order-nav nav div a {
+  /* color: crimson; */
+  color: crimson;
+  /* width: 4rem; */
+}
+
+.order-nav nav div p {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: crimson;
+  height: 30px;
+  width: 30px;
+  color: white;
+  border-radius: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.order-nav nav div .active {
+  background-color: crimson;
+  color: white;
+  width: 14rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.order-nav nav div .active h3 {
+  color: white;
+}
+.order-nav nav div .active p {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  color: crimson;
+  border-radius: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.order-nav .total {
+  color: crimson;
+  width: 15rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

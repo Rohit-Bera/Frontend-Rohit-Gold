@@ -1,0 +1,71 @@
+.adminchatcontainer {
+  display: flex;
+}
+.adminchatcontainer .chatusers {
+  /* background-color: darkcyan; */
+  width: 22vw;
+  overflow: auto;
+}
+
+.adminchatcontainer .adminchatbox {
+  /* background-color: turquoise; */
+  margin: 10px 6rem;
+  border: 2px solid crimson;
+  width: 65vw;
+  height: 79vh;
+  border-radius: 10px;
+}
+
+.adminchatbox .adminallchat {
+  /* background-color: crimson; */
+  margin: 10px 10px;
+  width: 63.5vw;
+  height: 68vh;
+  overflow: auto;
+}
+.adminchatbox .adminInputs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.adminchatbox .adminInputs input {
+  height: 3rem;
+  width: 48rem;
+  font-size: 20px;
+  outline: none;
+  color: crimson;
+  font-weight: bold;
+  font-family: cursive;
+  border: 2px solid crimson;
+  margin-right: 10px;
+}
+
+.adminchatbox .adminInputs button {
+  height: 3rem;
+  width: 11rem;
+  background-color: crimson;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* conversation */
+
+.conversation h3 {
+  background-color: crimson;
+  color: whitesmoke;
+  height: 3.5rem;
+
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-left: 15px;
+  padding-left: 2rem;
+}
+
+.conversation h3:hover {
+  background-color: rgb(158, 12, 41);
+  cursor: pointer;
+}
