@@ -46,7 +46,7 @@ const Editprofile = () => {
 
   const updateProfile = async () => {
     // console.log("_id: ", _id);
-    const url = `http://localhost:5800/updateuser/${_id}`;
+    const url = `https://rohit-goldapp-backend.herokuapp.com/updateuser/${_id}`;
 
     const send = await updateUser(url, input);
     // console.log("send update profile: ", send);

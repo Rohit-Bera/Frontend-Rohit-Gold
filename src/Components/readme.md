@@ -1,9 +1,4 @@
-socket.on("connect", () => {}); //for connection
-console.log("socket: ", socket); // gives socketid
+**\*** NOTE FOR MYSELF \*\*\*\*
 
-socket.emit("texted", { message });//emit : sending to server
-
-//on : receiving from server
-socket.on("welcome", (message) => {
-console.log(message);
-});
+1. first deploy backend to heroku from github
+2. then use heroku link insted of localhost(node local server) in frontend

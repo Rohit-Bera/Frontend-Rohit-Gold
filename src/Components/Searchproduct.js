@@ -42,7 +42,7 @@ const Searchproduct = () => {
     } else {
       const { _id } = item;
 
-      const url = `http://localhost:5800/addtowishlist?productId=${_id}`;
+      const url = `https://rohit-goldapp-backend.herokuapp.com/addtowishlist?productId=${_id}`;
 
       const result = await postWishlistApi(url, item, headers);
 

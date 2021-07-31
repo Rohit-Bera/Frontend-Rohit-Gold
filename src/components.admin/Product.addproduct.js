@@ -119,7 +119,7 @@ const Productaddproduct = () => {
 
       // console.log(fd);
 
-      const url = "http://localhost:5800/addProduct";
+      const url = "https://rohit-goldapp-backend.herokuapp.com/addProduct";
       const headers = { headers: { Authorization: `Bearer ${token}` } };
 
       const result = await addProductApi(url, fd, headers);

@@ -39,7 +39,7 @@ const Cart = () => {
 
   const myOrders = async () => {
     setLoader(true);
-    const url = `http://localhost:5800/myorders`;
+    const url = `https://rohit-goldapp-backend.herokuapp.com/myorders`;
 
     const result = await getmyOrderApi(url, headers);
 
@@ -73,7 +73,7 @@ const Cart = () => {
 
     const _id = item._id;
 
-    const url = `http://localhost:5800/cancelorder/${_id}`;
+    const url = `https://rohit-goldapp-backend.herokuapp.com/cancelorder/${_id}`;
 
     const result = await deleteOrderApi(url, headers, item);
     // console.log("response: ", result);

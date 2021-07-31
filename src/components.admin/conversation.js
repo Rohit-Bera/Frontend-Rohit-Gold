@@ -14,7 +14,7 @@ const Conversation = (conversation) => {
 
   const adminId = useSelector((state) => state.adminReducer)._id; //adminId
 
-  const api = "http://localhost:5800";
+  const api = "https://rohit-goldapp-backend.herokuapp.com";
 
   const customerId = conversation.conversation.members.find(
     (m) => m !== adminId

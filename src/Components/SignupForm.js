@@ -51,7 +51,7 @@ const Signup = () => {
   const postUsers = async () => {
     // console.log("Users :", users);
     setLoader(true);
-    const url = "http://localhost:5800/signup";
+    const url = "https://rohit-goldapp-backend.herokuapp.com/signup";
     try {
       const send = await postUsersignup(url, users);
       // console.log("send signup profle: ", send);

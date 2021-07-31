@@ -35,7 +35,7 @@ const Adminhero = () => {
   const getUser = async () => {
     setLoader(true);
 
-    const url = `http://localhost:5800/getalluser`;
+    const url = `https://rohit-goldapp-backend.herokuapp.com/getalluser`;
 
     const result = await getAllUser(url, headers);
     // console.log("result users: ", result.data);
@@ -52,7 +52,7 @@ const Adminhero = () => {
   const getProduct = async () => {
     setLoader(true);
 
-    const url = `http://localhost:5800/getallproduct`;
+    const url = `https://rohit-goldapp-backend.herokuapp.com/getallproduct`;
 
     const result = await getAllProductApi(url, headers);
     // console.log("result product: ", result);
@@ -69,7 +69,7 @@ const Adminhero = () => {
   const getOrder = async () => {
     setLoader(true);
 
-    const url = `http://localhost:5800/allorder`;
+    const url = `https://rohit-goldapp-backend.herokuapp.com/allorder`;
 
     const result = await getallOrderApi(url, headers);
     // console.log("result order: ", result.data.orders.length);

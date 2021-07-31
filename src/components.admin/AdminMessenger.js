@@ -33,7 +33,7 @@ const AdminMessenger = () => {
   const adminToken = useSelector((state) => state.adminReducer).token; //admintoken
   const headers = { headers: { Authorization: `Bearer ${adminToken}` } };
 
-  const api = "http://localhost:5800";
+  const api = "https://rohit-goldapp-backend.herokuapp.com";
 
   const takeInput = (e) => {
     const value = e.target.value;

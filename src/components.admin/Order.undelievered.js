@@ -31,7 +31,7 @@ const OrderUndelievered = () => {
 
   const getOrder = async () => {
     setLoader(true);
-    const url = "http://localhost:5800/allorder";
+    const url = "https://rohit-goldapp-backend.herokuapp.com/allorder";
 
     const result = await getallOrderApi(url, headers);
 
@@ -72,7 +72,7 @@ const OrderUndelievered = () => {
     // console.log("status state : ", status);
 
     const id = status._id;
-    const url = `http://localhost:5800/updateorder/${id}`;
+    const url = `https://rohit-goldapp-backend.herokuapp.com/updateorder/${id}`;
 
     const result = await updateOrderApi(url, status, headers);
 

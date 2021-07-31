@@ -61,7 +61,7 @@ const ViewProduct = () => {
     if (username === "" && email === "" && address === "" && phone === "") {
       return history.push("/LoginSignup");
     } else {
-      const url = `http://localhost:5800/placeorder?productId=${_id}`;
+      const url = `https://rohit-goldapp-backend.herokuapp.com/placeorder?productId=${_id}`;
 
       const result = await postOrderApi(url, data, headers);
       // console.log("result: ", result);

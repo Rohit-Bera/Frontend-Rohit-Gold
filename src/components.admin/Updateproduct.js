@@ -108,7 +108,7 @@ const Updateproduct = () => {
         form.append("productImage", productImage[key]);
       }
 
-      const url = `http://localhost:5800/updateproduct/${id}`;
+      const url = `https://rohit-goldapp-backend.herokuapp.com/updateproduct/${id}`;
 
       const headers = { headers: { Authorization: `Bearer ${token}` } };
 

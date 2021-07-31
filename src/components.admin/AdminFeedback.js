@@ -5,7 +5,7 @@ const AdminFeedback = () => {
   return (
     <>
       <AdminNav />
-      feedback
+      work in progress
     </>
   );
 };

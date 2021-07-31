@@ -34,7 +34,7 @@ const Message = () => {
   const getMessage = async () => {
     // console.log("conversationId: ", conversationId);
 
-    const link = `http://localhost:5800/getMessagesforUser/${conversationId}`;
+    const link = `https://rohit-goldapp-backend.herokuapp.com/getMessagesforUser/${conversationId}`;
 
     const response = await getMessageUserApi(link, headers);
     // console.log("response message: ", response);

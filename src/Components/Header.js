@@ -27,7 +27,7 @@ const Header = () => {
       return toast.error("enter search product", { position: "bottom-right" });
     }
 
-    const url = `http://localhost:5800/getSearchProduct/${search}`;
+    const url = `https://rohit-goldapp-backend.herokuapp.com/getSearchProduct/${search}`;
 
     const response = await getSearchedProductApi(url);
     // console.log("response: ", response);

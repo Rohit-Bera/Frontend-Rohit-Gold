@@ -39,7 +39,7 @@ const Productallproduct = () => {
   const getProduct = async () => {
     setLoader(true);
     try {
-      const url = "http://localhost:5800/getallproduct";
+      const url = "https://rohit-goldapp-backend.herokuapp.com/getallproduct";
       const headers = { headers: { Authorization: `Bearer ${token}` } };
 
       const response = await getAllProductApi(url, headers);
@@ -70,7 +70,7 @@ const Productallproduct = () => {
 
       const { _id } = item;
 
-      const url = `http://localhost:5800/deleteproduct/${_id}`;
+      const url = `https://rohit-goldapp-backend.herokuapp.com/deleteproduct/${_id}`;
       const headers = { headers: { Authorization: `Bearer ${token}` } };
 
       const response = await deleteProductApi(url, headers);
