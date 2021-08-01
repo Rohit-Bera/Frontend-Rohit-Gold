@@ -23,20 +23,24 @@ const Conversation = (conversation) => {
   const getUserId = async () => {
     const url = `${api}/getUserById/${customerId}`;
     const response = await getUserByIDApi(url);
-    // console.log("response user: ", response);
+    console.log("response user: ", response);
 
-    setUsername(response.userId.username);
-    // console.log("username: ", response.userId.username);
+    if (response.status === 500) {
+      return null;
+    } else {
+      setUsername(response.userId.username);
+    }
+    console.log("username: ", response.userId.username);
   };
 
-  if (username !== undefined) {
+  if (username === undefined) {
+    return <h3>no users</h3>;
+  } else {
     return (
       <div className="conversation">
         <h3>{username}</h3>
       </div>
     );
-  } else {
-    return <h3>no users</h3>;
   }
 };
 
