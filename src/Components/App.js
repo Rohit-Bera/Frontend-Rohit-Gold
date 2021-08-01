@@ -115,11 +115,7 @@ const App = () => {
           />
 
           {/* market path */}
-          <Route
-            path="https://rohits-goldapp.netlify.app/"
-            exact
-            component={Marketplace}
-          />
+          <Route path="/" exact component={Marketplace} />
           <Route
             path="https://rohits-goldapp.netlify.app/home"
             exact
