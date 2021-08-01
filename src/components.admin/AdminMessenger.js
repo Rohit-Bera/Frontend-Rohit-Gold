@@ -94,7 +94,7 @@ const AdminMessenger = () => {
 
     const response = await postMessageforAdminApi(link, message, headers);
     // console.log("response: ", response);
-    window.location.reload();
+    getMessageforAdmin();
   };
 
   return (
