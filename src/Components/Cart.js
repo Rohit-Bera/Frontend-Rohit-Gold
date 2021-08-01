@@ -96,7 +96,7 @@ const Cart = () => {
 
     myOrders();
 
-    window.location.reload();
+    // window.location.reload();
   };
 
   return (

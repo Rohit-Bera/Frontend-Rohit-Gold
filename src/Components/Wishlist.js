@@ -89,7 +89,7 @@ const Wishlist = () => {
     }
 
     myWishlist();
-    window.location.reload();
+    // window.location.reload();
   };
 
   const buyNow = async (item) => {

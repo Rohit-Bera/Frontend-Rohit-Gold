@@ -29,11 +29,15 @@ const Conversation = (conversation) => {
     // console.log("username: ", response.userId.username);
   };
 
-  return (
-    <div className="conversation">
-      <h3>{username}</h3>
-    </div>
-  );
+  if (username !== undefined) {
+    return (
+      <div className="conversation">
+        <h3>{username}</h3>
+      </div>
+    );
+  } else {
+    return <h3>no users</h3>;
+  }
 };
 
 export default Conversation;
