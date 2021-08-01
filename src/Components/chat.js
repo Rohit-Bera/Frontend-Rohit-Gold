@@ -71,7 +71,6 @@ const Chat = () => {
     const response = await postMessageUserApi(url, message, headers);
 
     // console.log("response post message: ", response);
-    window.location.reload();
   };
 
   const getConversation = async () => {
