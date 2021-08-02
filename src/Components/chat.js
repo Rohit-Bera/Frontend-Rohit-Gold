@@ -71,6 +71,8 @@ const Chat = () => {
     const response = await postMessageUserApi(url, message, headers);
 
     // console.log("response post message: ", response);
+
+    setnewMessage("");
   };
 
   const getConversation = async () => {
@@ -110,6 +112,8 @@ const Chat = () => {
     // console.log("members: ", data);
     const response = await postConversationUserApi(link, data, headers);
     // console.log("response post convi: ", response);
+
+    history.push("/help/chat-with-helpCenter");
   };
 
   //setTime intervall

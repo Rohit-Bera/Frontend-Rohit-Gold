@@ -10,6 +10,7 @@ import {
 } from "../Data/Services/Oneforall";
 import Conversation from "./conversation";
 import { conversation, messages } from "../Data/Reducers/chat.reducer";
+import { useHistory } from "react-router-dom";
 
 const AdminMessenger = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const AdminMessenger = () => {
   const [conversations, setConversation] = useState([]);
   const [newMessage, setnewMessage] = useState([]);
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const currentConversation = useSelector(
     (state) => state.chatReducer
@@ -60,6 +62,8 @@ const AdminMessenger = () => {
     dispatch(conversation({ _id }));
 
     getMessageforAdmin();
+
+    history.push("/adminpannel/UserChats");
   };
 
   const getMessageforAdmin = async () => {
@@ -92,6 +96,8 @@ const AdminMessenger = () => {
     const response = await postMessageforAdminApi(link, message, headers);
     // console.log("response: ", response);
     getMessageforAdmin();
+
+    setnewMessage("");
   };
 
   return (
