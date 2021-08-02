@@ -110,8 +110,6 @@ const Chat = () => {
     // console.log("members: ", data);
     const response = await postConversationUserApi(link, data, headers);
     // console.log("response post convi: ", response);
-
-    window.location.reload();
   };
 
   //setTime intervall
