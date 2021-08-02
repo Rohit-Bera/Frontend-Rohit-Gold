@@ -15,8 +15,6 @@ import { useHistory } from "react-router-dom";
 const AdminMessenger = () => {
   useEffect(() => {
     getConversation();
-    getMessageforAdmin();
-    getConversation();
     notifications();
   }, []);
 

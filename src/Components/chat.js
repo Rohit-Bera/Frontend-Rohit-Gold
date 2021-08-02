@@ -18,8 +18,6 @@ import { Redirect, useHistory } from "react-router-dom";
 const Chat = () => {
   useEffect(() => {
     getConversation();
-    getMessage();
-    getConversation();
     notifications();
   }, []);
 
