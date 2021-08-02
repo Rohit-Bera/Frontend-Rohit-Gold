@@ -119,7 +119,7 @@ const Chat = () => {
     setInterval(function () {
       // console.log("its working");
       getMessage();
-    }, 180000);
+    }, 5000);
 
     clearTimeout(getMessage());
   };

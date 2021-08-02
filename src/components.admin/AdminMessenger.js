@@ -78,7 +78,7 @@ const AdminMessenger = () => {
     setInterval(function () {
       // console.log("its working");
       getMessageforAdmin();
-    }, 120000);
+    }, 5000);
   };
 
   const postMessageofAdmin = async () => {
