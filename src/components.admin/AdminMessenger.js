@@ -60,9 +60,6 @@ const AdminMessenger = () => {
     dispatch(conversation({ _id }));
 
     getMessageforAdmin();
-    if (conversation !== "" || message !== undefined) {
-      window.location.reload();
-    }
   };
 
   const getMessageforAdmin = async () => {

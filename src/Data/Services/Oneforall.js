@@ -12,15 +12,15 @@ import { useSelector } from "react-redux";
 
 //users api
 export const postUsersignup = async (link, data) => {
-  console.log("data: ", data);
+  // console.log("data: ", data);
 
   try {
     const response = await axios.post(link, data);
-    console.log("response: ", response);
+    // console.log("response: ", response);
 
     return response;
   } catch (e) {
-    console.log("error: ", e);
+    // console.log("error: ", e);
 
     const error = "data already exist with this credentials";
 
@@ -30,15 +30,15 @@ export const postUsersignup = async (link, data) => {
 };
 
 export const postUsersignin = async (link, data) => {
-  console.log("data: ", data);
+  // console.log("data: ", data);
 
   try {
     const response = await axios.post(link, data);
-    console.log("response: ", response);
+    // console.log("response: ", response);
 
     return response;
   } catch (e) {
-    console.log("error: ", e);
+    // console.log("error: ", e);
 
     const error = "data already exist with this credentials";
 
@@ -48,15 +48,15 @@ export const postUsersignin = async (link, data) => {
 };
 
 export const updateUser = async (link, data) => {
-  console.log("data: ", data);
+  // console.log("data: ", data);
 
   try {
     const response = await axios.put(link, data);
-    console.log("response: ", response);
+    // console.log("response: ", response);
 
     return response;
   } catch (e) {
-    console.log("error: ", e);
+    // console.log("error: ", e);
 
     const error = "something went wrong";
 
@@ -71,7 +71,7 @@ export const getAllUser = async (link) => {
 
     return response;
   } catch (error) {
-    console.log("error: ", error);
+    // console.log("error: ", error);
 
     const response = "something went wrong";
 
@@ -85,7 +85,7 @@ export const getUserByIDApi = async (link) => {
 
     return response.data;
   } catch (error) {
-    console.log("error: ", error);
+    // console.log("error: ", error);
 
     const response = "something went wrong";
 
@@ -106,7 +106,7 @@ export const getProductApi = async (link) => {
     const response = { success: "issuccessfull", product };
     return response;
   } catch (e) {
-    console.log("error: ", e);
+    // console.log("error: ", e);
 
     const error = "something went wrong";
 
@@ -126,7 +126,7 @@ export const getProductbynameApi = async (link) => {
     const response = { success: "issuccessfull", product };
     return response;
   } catch (e) {
-    console.log("error: ", e);
+    // console.log("error: ", e);
 
     const error = "something went wrong";
 
@@ -159,7 +159,7 @@ export const getAllProductApi = async (link, headers) => {
 
     return result;
   } catch (e) {
-    console.log("error: ", e);
+    // console.log("error: ", e);
 
     const error = "something went wrong";
 
@@ -171,11 +171,11 @@ export const getAllProductApi = async (link, headers) => {
 export const addProductApi = async (link, data, headers) => {
   try {
     const response = await axios.post(link, data, headers);
-    console.log("data: ", data);
+    // console.log("data: ", data);
 
     return response;
   } catch (error) {
-    console.log("error: ", error);
+    // console.log("error: ", error);
 
     return { warning: "somehting went wrong", error };
   }
@@ -187,7 +187,7 @@ export const deleteProductApi = async (link, headers) => {
 
     return response;
   } catch (error) {
-    console.log("error: ", error);
+    // console.log("error: ", error);
 
     return { warning: "somehting went wrong", error };
   }
@@ -199,7 +199,7 @@ export const updateProductApi = async (link, data, headers) => {
 
     return response;
   } catch (error) {
-    console.log("error: ", error);
+    // console.log("error: ", error);
 
     return { warning: "somehting went wrong", error };
   }
@@ -217,7 +217,7 @@ export const getCollectionApi = async (link, headers) => {
 
     return response;
   } catch (error) {
-    console.log("error: ", error);
+    // console.log("error: ", error);
 
     const response = "something went wrong";
 
@@ -235,7 +235,7 @@ export const postCollectionApi = async (link, data, headers) => {
     const response = { success: "issuccess", result };
     return response;
   } catch (error) {
-    console.log("error: ", error);
+    // console.log("error: ", error);
 
     const response = { failure: "isfail", error };
 
@@ -253,7 +253,7 @@ export const deleteCollectionApi = async (link, headers, data) => {
     const response = { success: "issuccess", result };
     return response;
   } catch (error) {
-    console.log("error: ", error);
+    // console.log("error: ", error);
 
     const response = { failure: "isfail", error };
 
@@ -269,19 +269,19 @@ export const getallOrderApi = async (link, headers) => {
 
     return response;
   } catch (e) {
-    console.log("e: ", e);
+    // console.log("e: ", e);
 
     const response = { error: "something went wrong" };
   }
 };
 
 export const postOrderApi = async (link, data, headers) => {
-  console.log("headers: ", headers);
-  console.log("data: ", data);
-  console.log("link: ", link);
+  // console.log("headers: ", headers);
+  // console.log("data: ", data);
+  // console.log("link: ", link);
   try {
     const response = await axios.post(link, data, headers);
-    console.log("response: ", response);
+    // console.log("response: ", response);
     return response;
   } catch (e) {
     const response = { error: "something went wrong" };
@@ -293,11 +293,11 @@ export const postOrderApi = async (link, data, headers) => {
 export const getmyOrderApi = async (link, headers) => {
   try {
     const response = await axios.get(link, headers);
-    console.log("response: ", response);
+    // console.log("response: ", response);
 
     return response.data;
   } catch (e) {
-    console.log("e: ", e);
+    // console.log("e: ", e);
 
     const response = { error: "something went wrong" };
 
@@ -311,7 +311,7 @@ export const deleteOrderApi = async (link, headers, data) => {
 
     return result.data;
   } catch (e) {
-    console.log("e: ", e);
+    // console.log("e: ", e);
     const response = { erorr: "something went wrong" };
     return response;
   }
@@ -323,11 +323,11 @@ export const updateOrderApi = async (link, data, headers) => {
   // console.log("link: ", link);
   try {
     const response = await axios.put(link, data, headers);
-    console.log("response: ", response);
+    // console.log("response: ", response);
 
     return response.data;
   } catch (e) {
-    console.log("e: ", e);
+    // console.log("e: ", e);
 
     const error = "something went wrong";
 
@@ -338,16 +338,16 @@ export const updateOrderApi = async (link, data, headers) => {
 // <-- wishlist api -->
 
 export const postWishlistApi = async (link, data, headers) => {
-  console.log("headers: ", headers);
-  console.log("data: ", data);
-  console.log("link: ", link);
+  // console.log("headers: ", headers);
+  // console.log("data: ", data);
+  // console.log("link: ", link);
   try {
     const response = await axios.post(link, data, headers);
     // console.log("response: ", response);
 
     return response.data;
   } catch (e) {
-    console.log("error: ", e);
+    // console.log("error: ", e);
 
     const response = { error: "something went wrong" };
 
@@ -361,7 +361,7 @@ export const getWishlistApi = async (link, headers) => {
 
     return response.data;
   } catch (e) {
-    console.log("e: ", e);
+    // console.log("e: ", e);
 
     const response = { erorr: "something went wrong" };
     return response;
@@ -374,7 +374,7 @@ export const deleteWishlistApi = async (link, headers, data) => {
 
     return response.data;
   } catch (e) {
-    console.log("e: ", e);
+    // console.log("e: ", e);
 
     const response = { erorr: "something went wrong" };
     return response;
@@ -390,7 +390,7 @@ export const postConversationUserApi = async (url, data, headers) => {
     // console.log("response: ", response);
     return response.data;
   } catch (e) {
-    console.log("e: ", e);
+    // console.log("e: ", e);
 
     const response = { erorr: "something went wrong" };
     return response;
@@ -403,7 +403,7 @@ export const getConversationUserApi = async (url, headers) => {
 
     return response.data;
   } catch (e) {
-    console.log("e: ", e);
+    // console.log("e: ", e);
 
     const response = { erorr: "something went wrong" };
     return response;
@@ -416,7 +416,7 @@ export const getMessageUserApi = async (url, headers) => {
 
     return response.data;
   } catch (e) {
-    console.log("e: ", e);
+    // console.log("e: ", e);
 
     const response = { erorr: "something went wrong" };
     return response.data;
@@ -426,9 +426,9 @@ export const getMessageUserApi = async (url, headers) => {
 export const postMessageUserApi = async (url, data, headers) => {
   try {
     const response = await axios.post(url, data, headers);
-    console.log("response: ", response);
+    // console.log("response: ", response);
   } catch (e) {
-    console.log("e: ", e);
+    // console.log("e: ", e);
 
     const response = { erorr: "something went wrong" };
     return response.data;
@@ -439,7 +439,7 @@ export const postMessageUserApi = async (url, data, headers) => {
 export const postConversationAdminApi = async () => {
   try {
   } catch (e) {
-    console.log("e: ", e);
+    // console.log("e: ", e);
 
     const response = { erorr: "something went wrong" };
     return response;
@@ -452,7 +452,7 @@ export const getConversationAdminApi = async (url, headers) => {
 
     return response.data;
   } catch (e) {
-    console.log("e: ", e);
+    // console.log("e: ", e);
 
     const response = { erorr: "something went wrong" };
     return response;
@@ -465,7 +465,7 @@ export const getMessageforAdminApi = async (url, headers) => {
 
     return response.data;
   } catch (e) {
-    console.log("e: ", e);
+    // console.log("e: ", e);
 
     const response = { erorr: "something went wrong" };
     return response.data;
@@ -475,9 +475,9 @@ export const getMessageforAdminApi = async (url, headers) => {
 export const postMessageforAdminApi = async (url, data, headers) => {
   try {
     const response = await axios.post(url, data, headers);
-    console.log("response: ", response);
+    // console.log("response: ", response);
   } catch (e) {
-    console.log("e: ", e);
+    // console.log("e: ", e);
 
     const response = { erorr: "something went wrong" };
     return response.data;
