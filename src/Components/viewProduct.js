@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import "../Style/marketplace.css";
 
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
-
 import { useSelector } from "react-redux";
 import Loader from "react-loader-spinner";
 import { toast } from "react-toastify";
@@ -13,10 +10,10 @@ import { postOrderApi } from "../Data/Services/Oneforall";
 
 import history, { useHistory } from "react-router-dom";
 
-// carousel
+// slider
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-import Carousel, { autoplayPlugin } from "@brainhubeu/react-carousel";
-import "@brainhubeu/react-carousel/lib/style.css";
 import Footer from "./Mainfooter";
 
 const ViewProduct = () => {
@@ -44,6 +41,26 @@ const ViewProduct = () => {
 
   const history = useHistory();
   const [loader, setLoader] = useState(false); // loaders state
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
   const placeOrder = async () => {
     const data = {
@@ -82,17 +99,26 @@ const ViewProduct = () => {
           <div className="view">
             <div className="img">
               <Carousel
-                plugins={[
-                  "arrows",
-                  "infinite",
-                  {
-                    resolve: autoplayPlugin,
-                    options: {
-                      interval: 5000,
-                    },
-                  },
+                className="slider"
+                swipeable={true}
+                draggable={true}
+                showDots={false}
+                ssr={true} // means to render carousel on server-side.
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={2500}
+                responsive={responsive}
+                keyBoardControl={true}
+                customTransition="all .30s"
+                transitionDuration={200}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={[
+                  "tablet",
+                  "mobile",
+                  "superLargeDesktop",
+                  "desktop",
                 ]}
-                animationSpeed={1000}
+                itemClass="carousel-item-padding-80-px"
               >
                 <img src={productImage[0]} />
                 <img src={productImage[1]} />
@@ -140,17 +166,26 @@ const ViewProduct = () => {
           <div className="view">
             <div className="img">
               <Carousel
-                plugins={[
-                  "arrows",
-                  "infinite",
-                  {
-                    resolve: autoplayPlugin,
-                    options: {
-                      interval: 5000,
-                    },
-                  },
+                className="slider"
+                swipeable={true}
+                draggable={true}
+                showDots={false}
+                ssr={true} // means to render carousel on server-side.
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={2500}
+                responsive={responsive}
+                keyBoardControl={true}
+                customTransition="all .30s"
+                transitionDuration={200}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={[
+                  "tablet",
+                  "mobile",
+                  "superLargeDesktop",
+                  "desktop",
                 ]}
-                animationSpeed={1000}
+                itemClass="carousel-item-padding-80-px"
               >
                 <img src={productImage[0]} />
                 <img src={productImage[1]} />
@@ -197,17 +232,26 @@ const ViewProduct = () => {
           <div className="view">
             <div className="img">
               <Carousel
-                plugins={[
-                  "arrows",
-                  "infinite",
-                  {
-                    resolve: autoplayPlugin,
-                    options: {
-                      interval: 5000,
-                    },
-                  },
+                className="slider"
+                swipeable={true}
+                draggable={true}
+                showDots={false}
+                ssr={true} // means to render carousel on server-side.
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={2500}
+                responsive={responsive}
+                keyBoardControl={true}
+                customTransition="all .30s"
+                transitionDuration={200}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={[
+                  "tablet",
+                  "mobile",
+                  "superLargeDesktop",
+                  "desktop",
                 ]}
-                animationSpeed={1000}
+                itemClass="carousel-item-padding-80-px"
               >
                 <img src={productImage[0]} />
                 <img src={productImage[1]} />

@@ -24,12 +24,9 @@ import {
   clickedcollection,
 } from "../Data/Reducers/hometocollection.reducer";
 
-//for slider
-import Carousel, {
-  slidesToShowPlugin,
-  autoplayPlugin,
-} from "@brainhubeu/react-carousel";
-import "@brainhubeu/react-carousel/lib/style.css";
+// slider
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 import Header from "./Header";
 import { getProductApi } from "../Data/Services/Oneforall";
@@ -62,6 +59,26 @@ const Marketplace = () => {
     const products = response.product.data.product;
 
     dispatch(allProduct({ products }));
+  };
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 4,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
   };
 
   return (
@@ -116,20 +133,26 @@ const Marketplace = () => {
           </div>
           <div className="img-slider">
             <Carousel
-              plugins={[
-                "centered",
-                "infinite",
-                "arrows",
-                {
-                  resolve: slidesToShowPlugin,
-                  autoplayPlugin,
-                  options: {
-                    numberOfSlides: 3,
-                    interval: 4000,
-                  },
-                },
+              className="slider"
+              swipeable={true}
+              draggable={true}
+              showDots={false}
+              ssr={true} // means to render carousel on server-side.
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={2500}
+              responsive={responsive}
+              keyBoardControl={true}
+              customTransition="all .30s"
+              transitionDuration={200}
+              containerClass="carousel-container"
+              removeArrowOnDeviceType={[
+                "tablet",
+                "mobile",
+                "superLargeDesktop",
+                "desktop",
               ]}
-              animationSpeed={1000}
+              itemClass="carousel-item-padding-80-px"
             >
               <Link to="/home/love-alphabet-collection">
                 <img
