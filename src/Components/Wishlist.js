@@ -47,7 +47,7 @@ const Wishlist = () => {
 
   const myWishlist = async () => {
     setLoader(true);
-    const url = `https://rohit-goldapp-backend.herokuapp.com/mywishlist`;
+    const url = `https://goldapp-backend-server.onrender.com/mywishlist`;
 
     const result = await getWishlistApi(url, headers);
 
@@ -70,7 +70,7 @@ const Wishlist = () => {
     setLoader(true);
     // console.log("item: ", item);
 
-    const url = `https://rohit-goldapp-backend.herokuapp.com/removefromlist/${item._id}`;
+    const url = `https://goldapp-backend-server.onrender.com/removefromlist/${item._id}`;
 
     const result = await deleteWishlistApi(url, headers, item);
 
@@ -98,7 +98,7 @@ const Wishlist = () => {
 
     const _id = item.product._id;
 
-    const url = `https://rohit-goldapp-backend.herokuapp.com/placeorder?productId=${_id}`;
+    const url = `https://goldapp-backend-server.onrender.com/placeorder?productId=${_id}`;
 
     const result = await postOrderApi(url, item, headers);
     // console.log("result: ", result);

@@ -20,7 +20,7 @@ const Ordernav = () => {
   const [undispatch, setUndispatch] = useState(0); // for undelivered products
 
   const getOrder = async () => {
-    const url = "https://rohit-goldapp-backend.herokuapp.com/allorder";
+    const url = "https://goldapp-backend-server.onrender.com/allorder";
 
     const headers = { headers: { Authorization: `Bearer ${token}` } };
 

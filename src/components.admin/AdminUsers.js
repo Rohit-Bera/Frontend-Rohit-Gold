@@ -19,7 +19,7 @@ const Adminusers = () => {
 
   const getMembers = async () => {
     setLoader(true);
-    const url = "https://rohit-goldapp-backend.herokuapp.com/getalluser";
+    const url = "https://goldapp-backend-server.onrender.com/getalluser";
 
     const response = await getAllUser(url);
     console.log("response: ", response.data);

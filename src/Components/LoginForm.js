@@ -50,7 +50,7 @@ const Login = () => {
   //post-api
   const postData = async () => {
     // console.log("users : ", users);
-    const url = "https://rohit-goldapp-backend.herokuapp.com/signin";
+    const url = "https://goldapp-backend-server.onrender.com/signin";
     setLoader(true);
     try {
       const send = await postUsersignin(url, users);

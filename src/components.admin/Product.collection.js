@@ -45,7 +45,7 @@ const Productcollection = () => {
   const getCollection = async () => {
     setLoader(true);
     try {
-      const url = "https://rohit-goldapp-backend.herokuapp.com/getCollection";
+      const url = "https://goldapp-backend-server.onrender.com/getCollection";
 
       const headers = { headers: { Authorization: `Bearer ${token}` } };
       const response = await getCollectionApi(url, headers);
@@ -102,7 +102,7 @@ const Productcollection = () => {
 
       fd.append("nameofCollection", Input.nameofCollection);
 
-      const url = "https://rohit-goldapp-backend.herokuapp.com/addCollection";
+      const url = "https://goldapp-backend-server.onrender.com/addCollection";
       const headers = { headers: { Authorization: `Bearer ${token}` } };
       // const headers = { Authorization: `Bearer ${token}` };
       // console.log("headers: ", headers);
@@ -158,7 +158,7 @@ const Productcollection = () => {
       formd.append("imgofCollection", data.imgofCollection);
       formd.append("nameofCollection", data.nameofCollection);
 
-      const url = `https://rohit-goldapp-backend.herokuapp.com/deleteCollection/${_id}`;
+      const url = `https://goldapp-backend-server.onrender.com/deleteCollection/${_id}`;
       const headers = { headers: { Authorization: `Bearer ${token}` } };
 
       const response = await deleteCollectionApi(url, formd, headers);

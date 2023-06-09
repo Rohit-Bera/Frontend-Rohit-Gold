@@ -54,7 +54,7 @@ const Marketplace = () => {
   };
 
   const allProducts = async () => {
-    const url = "https://rohit-goldapp-backend.herokuapp.com/getProduct";
+    const url = "https://goldapp-backend-server.onrender.com/getProduct";
 
     const response = await getProductApi(url);
     // console.log("response: ", response.product.data);

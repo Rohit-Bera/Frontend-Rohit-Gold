@@ -62,7 +62,7 @@ const Chat = () => {
       conversationId: conversationId,
     };
 
-    const url = `https://rohit-goldapp-backend.herokuapp.com/postMessageforUser`;
+    const url = `https://goldapp-backend-server.onrender.com/postMessageforUser`;
 
     // dispatch(messages({ response }));
 
@@ -74,7 +74,7 @@ const Chat = () => {
   };
 
   const getConversation = async () => {
-    const link = `https://rohit-goldapp-backend.herokuapp.com/getconversation/${user_id}`;
+    const link = `https://goldapp-backend-server.onrender.com/getconversation/${user_id}`;
 
     const response = await getConversationUserApi(link, headers);
     // console.log("response conversation : ", response);
@@ -94,7 +94,7 @@ const Chat = () => {
   const getMessage = async () => {
     // console.log("conversationId: ", conversationId);
 
-    const link = `https://rohit-goldapp-backend.herokuapp.com/getMessagesforUser/${conversationId}`;
+    const link = `https://goldapp-backend-server.onrender.com/getMessagesforUser/${conversationId}`;
 
     const response = await getMessageUserApi(link, headers);
     // console.log("response message: ", response);
@@ -104,7 +104,7 @@ const Chat = () => {
   // getMessage();
 
   const postConversationUser = async () => {
-    const link = `https://rohit-goldapp-backend.herokuapp.com/postConversation`;
+    const link = `https://goldapp-backend-server.onrender.com/postConversation`;
 
     const data = { senderId, receiverId }; // should be object and should be the same name as given
     // console.log("members: ", data);

@@ -29,7 +29,7 @@ const Myorders = () => {
   const headers = { headers: { Authorization: `Bearer ${token}` } };
 
   const myOrders = async () => {
-    const url = `https://rohit-goldapp-backend.herokuapp.com/myorders`;
+    const url = `https://goldapp-backend-server.onrender.com/myorders`;
 
     const result = await getmyOrderApi(url, headers);
 

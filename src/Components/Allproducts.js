@@ -33,7 +33,7 @@ const Allproducts = () => {
     } else {
       const { _id } = item;
 
-      const url = `https://rohit-goldapp-backend.herokuapp.com/addtowishlist?productId=${_id}`;
+      const url = `https://goldapp-backend-server.onrender.com/addtowishlist?productId=${_id}`;
 
       const result = await postWishlistApi(url, item, headers);
 

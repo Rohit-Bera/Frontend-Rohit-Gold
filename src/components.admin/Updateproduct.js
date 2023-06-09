@@ -108,7 +108,7 @@ const Updateproduct = () => {
         form.append("productImage", productImage[key]);
       }
 
-      const url = `https://rohit-goldapp-backend.herokuapp.com/updateproduct/${id}`;
+      const url = `https://goldapp-backend-server.onrender.com/updateproduct/${id}`;
 
       const headers = { headers: { Authorization: `Bearer ${token}` } };
 

@@ -43,7 +43,7 @@ const Marketproduct = () => {
 
   const getProducts = async () => {
     setLoader(true);
-    const url = `https://rohit-goldapp-backend.herokuapp.com/getProductbyname/${collectionname}`;
+    const url = `https://goldapp-backend-server.onrender.com/getProductbyname/${collectionname}`;
 
     const products = await getProductbynameApi(url);
     // console.log("products: ", products);
@@ -68,7 +68,7 @@ const Marketproduct = () => {
     } else {
       const { _id } = item;
 
-      const url = `https://rohit-goldapp-backend.herokuapp.com/addtowishlist?productId=${_id}`;
+      const url = `https://goldapp-backend-server.onrender.com/addtowishlist?productId=${_id}`;
 
       const result = await postWishlistApi(url, item, headers);
 
